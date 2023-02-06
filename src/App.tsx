@@ -1,7 +1,7 @@
-function App() {
-  const tempVar = 5
+import React, { type FC } from 'react'
 
-  return <div>hello world</div>
+const App: FC = () => {
+  return <div>App</div>
 }
 
 export default App
