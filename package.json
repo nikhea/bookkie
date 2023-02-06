@@ -24,8 +24,7 @@
       "npm run lint",
       "prettier --write",
       "eslint --fix",
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   },
   "dependencies": {
