@@ -14,10 +14,18 @@
     "pretty": "prettier --write .",
     "prepare": "husky install"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
-    "**/*.{js,jsx}": [
+    "*.{js,jsx,ts,tsx,md,html}": [
       "npm run lint",
-      "prettier --write"
+      "prettier --write",
+      "eslint --fix",
+      "prettier --write",
+      "git add"
     ]
   },
   "dependencies": {
